@@ -12,7 +12,7 @@ class LapBulananController extends Controller
      */
     public function index()
     {
-        //
+        return view('laporan/laporanBulanan.index');
     }
 
     /**
@@ -20,7 +20,7 @@ class LapBulananController extends Controller
      */
     public function create()
     {
-        //
+        return view('laporan/laporanBulanan.create');
     }
 
     /**

@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Controllers\DashboarController;
+use App\Http\Controllers\KegiatanController;
+use App\Http\Controllers\LapKegiatanController;
+use App\Http\Controllers\LapBulananController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -29,6 +32,9 @@ Route::middleware([
     'verified',
 ])->group(function () {
     Route::resource('dashboard', DashboarController::class);
+    Route::resource('laporan', LapBulananController::class);
+    Route::resource('laporan', LapKegiatanController::class);
+    Route::resource('laporan', KegiatanController::class);
     // Route::get('/dashboard', function () {
     //     return view('dashboard');
     // })->name('dashboard');

@@ -12,7 +12,7 @@ class LapKegiatanController extends Controller
      */
     public function index()
     {
-        //
+        return view('laporan/laporanKegiatan.index');
     }
 
     /**
@@ -20,7 +20,7 @@ class LapKegiatanController extends Controller
      */
     public function create()
     {
-        //
+        return view('laporan/laporanKegiatan.create');
     }
 
     /**
