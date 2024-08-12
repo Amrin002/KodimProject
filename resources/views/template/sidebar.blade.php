@@ -56,7 +56,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="{{ route('kegiatan.index') }}" class="nav-link">
                                 <i class="fas fa-list nav-icon"></i>
                                 <p>Daftar Kegiatan</p>
                             </a>

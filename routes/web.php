@@ -34,7 +34,7 @@ Route::middleware([
     Route::resource('dashboard', DashboarController::class);
     Route::resource('laporan', LapBulananController::class);
     Route::resource('laporan', LapKegiatanController::class);
-    Route::resource('laporan', KegiatanController::class);
+    Route::resource('kegiatan', KegiatanController::class);
     // Route::get('/dashboard', function () {
     //     return view('dashboard');
     // })->name('dashboard');
