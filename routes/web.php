@@ -1,9 +1,12 @@
 <?php
 
+use App\Http\Controllers\AgendaLaporanController;
+use App\Http\Controllers\Daftar_KegiatanController;
 use App\Http\Controllers\DashboarController;
 use App\Http\Controllers\KegiatanController;
 use App\Http\Controllers\LapKegiatanController;
 use App\Http\Controllers\LapBulananController;
+use App\Http\Controllers\PenggunaController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -33,8 +36,10 @@ Route::middleware([
 ])->group(function () {
     Route::resource('dashboard', DashboarController::class);
     Route::resource('laporan', LapBulananController::class);
-    Route::resource('laporan', LapKegiatanController::class);
+    Route::resource('laporan', AgendaLaporanController::class);
     Route::resource('kegiatan', KegiatanController::class);
+    Route::resource('pengguna', PenggunaController::class);
+    Route::resource('Daftar', Daftar_KegiatanController::class);
     // Route::get('/dashboard', function () {
     //     return view('dashboard');
     // })->name('dashboard');

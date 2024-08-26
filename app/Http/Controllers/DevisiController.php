@@ -2,19 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Kegiatan;
+use App\Models\Devisi;
 use Illuminate\Http\Request;
 
-class KegiatanController extends Controller
+class DevisiController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $title = 'Halaman Kegiatan';
-        $halaman = 'Kegiatan';
-        return view('kegiatan.index', compact('title', 'halaman'));
+        //
     }
 
     /**
@@ -22,9 +20,7 @@ class KegiatanController extends Controller
      */
     public function create()
     {
-        $title = 'Halaman Kegiatan';
-        $halaman = 'Kegiatan';
-        return view('kegiatan.create', compact('title', 'halaman'));
+        //
     }
 
     /**
@@ -38,7 +34,7 @@ class KegiatanController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Kegiatan $kegiatan)
+    public function show(Devisi $devisi)
     {
         //
     }
@@ -46,7 +42,7 @@ class KegiatanController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Kegiatan $kegiatan)
+    public function edit(Devisi $devisi)
     {
         //
     }
@@ -54,7 +50,7 @@ class KegiatanController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Kegiatan $kegiatan)
+    public function update(Request $request, Devisi $devisi)
     {
         //
     }
@@ -62,7 +58,7 @@ class KegiatanController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Kegiatan $kegiatan)
+    public function destroy(Devisi $devisi)
     {
         //
     }

@@ -26,6 +26,7 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
+        'divisi',
         'password',
     ];
 
@@ -58,4 +59,12 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+    // public function user()
+    // {
+    //     return $this->belongsTo(User::class, 'users_id', 'id');
+    // }
+    public function devisi()
+    {
+        return $this->hasOne(Devisi::class, 'divisi_id', 'id');
+    }
 }

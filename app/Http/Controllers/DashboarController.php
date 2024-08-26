@@ -9,6 +9,8 @@ class DashboarController extends Controller
     //
     public function index()
     {
-        return view('dashboard.index');
+        $title = 'Halaman Utama';
+        $halaman = '';
+        return view('dashboard.index', compact('title', 'halaman'));
     }
 }
